@@ -113,7 +113,13 @@ func ExplainSQL(sql string, numericPlaceholder *regexp.Regexp, escaper string, a
 		case float64:
 			vars[idx] = strconv.FormatFloat(v, 'f', -1, 64)
 		case string:
-			vars[idx] = escaper + strings.ReplaceAll(v, escaper, escaper+escaper) + escaper
+			v = strings.ReplaceAll(v, "\\"+escaper, "")
+
+			if strings.Contains(v, escaper) {
+				vars[idx] = "E" + escaper + strings.ReplaceAll(v, escaper, "\\"+escaper) + escaper
+			} else {
+				vars[idx] = escaper + v + escaper
+			}
 		default:
 			rv := reflect.ValueOf(v)
 			if v == nil || !rv.IsValid() || rv.Kind() == reflect.Ptr && rv.IsNil() {
