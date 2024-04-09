@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"gorm.io/gorm/clause"
+	"github.com/zsmj-xu/gorm/clause"
 )
 
 func TestLimit(t *testing.T) {

@@ -3,8 +3,6 @@ package tests_test
 import (
 	"fmt"
 	"testing"
-
-	. "gorm.io/gorm/utils/tests"
 )
 
 func BenchmarkCreate(b *testing.B) {

@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils/tests"
+	"github.com/zsmj-xu/gorm/schema"
+	"github.com/zsmj-xu/gorm/utils/tests"
 )
 
 type UserCheck struct {

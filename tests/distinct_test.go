@@ -4,8 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"gorm.io/gorm"
-	. "gorm.io/gorm/utils/tests"
+	"github.com/zsmj-xu/gorm"
 )
 
 func TestDistinct(t *testing.T) {

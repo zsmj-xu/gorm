@@ -15,13 +15,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"gorm.io/driver/postgres"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/logger"
-	"gorm.io/gorm/migrator"
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils"
-	. "gorm.io/gorm/utils/tests"
+	"github.com/zsmj-xu/gorm"
+	"github.com/zsmj-xu/gorm/clause"
+	"github.com/zsmj-xu/gorm/logger"
+	"github.com/zsmj-xu/gorm/migrator"
+	"github.com/zsmj-xu/gorm/schema"
+	"github.com/zsmj-xu/gorm/utils"
+	. "github.com/zsmj-xu/gorm/utils/tests"
 )
 
 func TestMigrate(t *testing.T) {

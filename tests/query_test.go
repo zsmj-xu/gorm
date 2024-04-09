@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
-	. "gorm.io/gorm/utils/tests"
+	"github.com/zsmj-xu/gorm"
+	"github.com/zsmj-xu/gorm/clause"
+	. "github.com/zsmj-xu/gorm/utils/tests"
 )
 
 func TestFind(t *testing.T) {

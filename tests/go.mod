@@ -1,4 +1,4 @@
-module gorm.io/gorm/tests
+module github.com/zsmj-xu/gorm/tests
 
 go 1.18
 
@@ -11,7 +11,7 @@ require (
 	gorm.io/driver/postgres v1.5.7
 	gorm.io/driver/sqlite v1.5.5
 	gorm.io/driver/sqlserver v1.5.3
-	gorm.io/gorm v1.25.8
+	github.com/zsmj-xu/gorm v1.25.9
 )
 
 require (
@@ -34,6 +34,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace gorm.io/gorm => ../
+replace github.com/zsmj-xu/gorm => ../
 
 replace github.com/jackc/pgx/v5 => github.com/jackc/pgx/v5 v5.4.3
